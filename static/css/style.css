@@ -1,0 +1,86 @@
+
+/* style.css */
+
+/* Create a separate container for the background images */
+.background-slideshow {
+    background-image: url('https://c.53326.com/d/file/lan2018061413/k4pxpo20hmj.jpg'), url('https://c.53326.com/d/file/lan2018061413/nrsgsi2eqvv.jpg'), url('https://c.53326.com/d/file/lan2018062009/ly5z1f4kmlv.jpg');
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1; /* Place behind the content */
+    background-color: black,rgba(0, 0, 0, 0.5);/* Set initial background color */
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: slideshow 15s infinite;
+}
+
+@keyframes slideshow {
+    0%, 100% {
+        background-image: url('https://c.53326.com/d/file/lan2018061413/k4pxpo20hmj.jpg');
+        opacity: 0.9; /* Start and end with the first image fully visible */
+    }
+    33.33% {
+        background-image: url('https://c.53326.com/d/file/lan2018061413/nrsgsi2eqvv.jpg');
+        opacity: 0.9; /* Transition to the second image */
+    }
+    66.66% {
+        background-image: url('https://c.53326.com/d/file/lan2018062009/ly5z1f4kmlv.jpg');
+        opacity: 0.9; /* Transition to the third image */
+    }
+}
+
+
+/* Your existing styles for text content */
+body,
+h1,
+label,
+input[type="text"],
+input[type="submit"],
+p {
+    color: whitesmoke;
+    font-size: 150%;
+    font-family: 'Cursive', sans-serif;
+}
+
+/* Center align the page content */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Make the body at least the height of the viewport */
+    margin: 0; /* Remove default margin */
+    font-family: 'Cursive', sans-serif; /* Set font-family */
+    color: black; /* Set text color */
+}
+
+/* Center align the form elements */
+form {
+    text-align: center;
+}
+
+/* Style input fields */
+input[type="text"],
+input[type="submit"] {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    color: black; /* Set text color for inputs */
+}
+
+/* Style submit button */
+input[type="submit"] {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: pink; /* Change button color */
+    color: black; /* Change button text color */
+    cursor: pointer;
+}
+
+font-size: 18px;

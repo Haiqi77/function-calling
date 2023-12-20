@@ -1,0 +1,24 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <title>My BOT</title>
+</head>
+<body>
+    <div class="background-slideshow"></div>
+    <h1>The World of Attack on Titan</h1>
+    <form method="POST">
+        <label>character:</label>
+        <!-- Use proper Jinja templating syntax -->
+        <input name="name" type="text" value="{{ name }}"><br><br>
+        
+        <label>question:</label>
+        <!-- Use proper Jinja templating syntax -->
+        <input name="my_question" type="text" value="{{ my_question }}"><br><br>
+        
+        <input type="submit" value="Submit"><br><br>
+    </form>
+    <p>{{ bot_response }}</p>
+</body>
+</html>
